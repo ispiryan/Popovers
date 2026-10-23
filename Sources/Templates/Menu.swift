@@ -359,7 +359,7 @@ public extension Templates {
                                 .scrollBounceBehavior(.basedOnSize)
                         } else {
                             view
-                                .introspect(.scrollView, on: .iOS(.v15, .v16, .v17)) { scrollView in
+                                .introspect(.scrollView, on: .iOS(.v15, .v16, .v17, .v18, .v26)) { scrollView in
                                     scrollView.alwaysBounceVertical = false
                                 }
                         }
