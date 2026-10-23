@@ -18,9 +18,12 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        // Introspect's major version follows the OS, e.g. 26.x adds iOS 26, so
+        // the range spans two majors to fit apps on either. 26.0.0 is the first
+        // with `.v26`.
          .package(
             url: "https://github.com/siteline/SwiftUI-Introspect",
-            from: "1.0.0"
+            "26.0.0" ..< "28.0.0"
         ),
     ],
     targets: [
